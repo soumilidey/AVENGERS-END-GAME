@@ -1,7 +1,7 @@
-//create the objects
+//object creation
 var player, ob1, ob2, ob3, ob4, gp,congrats;
 var playerImg, ob1Img, ob2Img, ob3Img, ob4Img, gpImg,congImg;
-var ground, bgImg
+var ground, bgImg;
 var rand1;
 var edges1,edges2,edges3,edges4,edges5;
 var PLAY = 1;
@@ -12,13 +12,13 @@ var score=0;
 //load the images
 function preload(){
   playerImg= loadImage("images/ironman.png");
-  ob1Img= loadImage("images/camerica.png")
+  ob1Img= loadImage("images/camerica.png");
   bgImg= loadImage("images/bg.jpg");
   gpImg= loadImage("images/gp.png");
   ob2Img= loadImage("images/bv.png");
-  ob3Img= loadImage("images/thanos.png")
-  ob4Img= loadImage("images/Hawkeye.png")
-  congImg=loadImage("images/cong.jpg")
+  ob3Img= loadImage("images/thanos.png");
+  ob4Img= loadImage("images/Hawkeye.png");
+  congImg=loadImage("images/cong.jpg");
 }
 
 function setup() {
@@ -91,7 +91,6 @@ function draw() {
   }
   score = score + 50;
    //giving the velocity to the obstacles
-  //rand1=random(1,5)
  
   congrats.visible=false;
   if (player.isTouching(ob1)||player.isTouching(ob2)||player.isTouching(ob3)||player.isTouching(ob4)){
